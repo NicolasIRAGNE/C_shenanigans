@@ -13,8 +13,7 @@ char f[L'😆' ^ sizeof(L'🤣')] =
 	'h', 'e', 'l', 'l', 'o', '\n',
 };
 
-
 int main()
 {
-  ((int(*)())main-L'😂')();
+	((int(*)(int(*)()))main-L'😂')(main);
 }
